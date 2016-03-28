@@ -17,10 +17,9 @@
     <div class="main" ng-controller="MainController">
       <div class="container">
         <div class="content">
-            <program-listing listing="sherlock">
-            </program-listing>
-            <program-listing listing="cherlock">
-            </program-listing>
+            <div ng-repeat = "program in programs" class="row">
+			  <program-listing listing="program"></program-listing> 
+</div> 
         </div>
       </div>
     </div>
